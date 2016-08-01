@@ -39,8 +39,9 @@
             <p class="price">{{ product.price | currency }}</p> 
             <p class="date">{{ product.pubdate | date }}</p>
             <div class="rating"> 
-                <!-- calling the controller functio with a built in angular variable from ng-repeat -->
-                <p class="likes" ng-click="plusOne($index)">+{{product.likes}} </p> 
+                <!-- calling the controller function with a built in angular variable from ng-repeat -->
+                <p class="likes" ng-click="plusOne($index)">+{{product.likes}} </p>
+                <p class="dislikes" ng-click="minusOne($index)">-{{product.dislikes}}</p>
             </div>
           </div> 
         </div>
